@@ -64,3 +64,4 @@ class SqliteRepository(AbstractRepository[T]):
         # Удаляем объект с заданным идентификатором
         self.cursor.execute("DELETE FROM objects WHERE pk = ?", (pk,))
         self.conn.commit()
+    
